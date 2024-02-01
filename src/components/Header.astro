@@ -1,14 +1,44 @@
 ---
-
+const navLinks = [
+      {
+            class: "hover:font-bold hover:text-[#f8ab5e]",
+            label: "experience",
+            href: "/#experience",
+            title: "Experience",
+      },
+      {
+            class: "hover:font-bold hover:text-[#f8ab5e]",
+            label: "projects",
+            href: "/#projects",
+            title: "Projects",
+      },
+      {
+            class: "hover:font-bold hover:text-[#f8ab5e]",
+            label: "about",
+            href: "/#about",
+            title: "About",
+      },
+      {
+            class: "hover:font-bold hover:text-[#f8ab5e]",
+            label: "contact",
+            href: "/#contact",
+            title: "Contact",
+      },
+];
 ---
 
-<header class="flex items-center justify-between gap-x-[25rem] pt-5">
-      <img class="rounded-full w-14 h-14" src="../../public/images/mchouhy-photo.jpeg" alt="mchouhy-logo">
-      <nav class="flex flex-row gap-x-20">
-      <a class="hover:font-bold" href="#/Home">Home</a>
-      <a class="hover:font-bold" href="#/Experience">Experience</a>
-      <a class="hover:font-bold" href="#/Projects">Projects</a>
-      <a class="hover:font-bold" href="#/About">About</a>
-      <a class="hover:font-bold" href="#/Contact">Contact</a>
+<header class="flex items-center justify-between pt-4">
+      <nav class="flex flex-row gap-x-6 text-base font-semibold">
+            {
+                  navLinks.map((link) => (
+                        <a
+                              class={link.class}
+                              href={link.href}
+                              aria-label={link.label}
+                        >
+                              {link.title}
+                        </a>
+                  ))
+            }
       </nav>
 </header>

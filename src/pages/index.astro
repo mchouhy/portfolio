@@ -1,33 +1,12 @@
 ---
-import Badge from "../components/Badge.astro";
 import Layout from "../layouts/Layout.astro";
-import "./index.css";
+import Hero from "../components/Hero.astro";
+import Experience from "../components/Experience.astro";
 ---
 
 <Layout title="Mariano Chouhy - Portfolio">
 	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
-				Hey, I'm Mariano Chouhy<div class="flex items-center">
-					<a
-						href="https://linkedin.com/in/mchouhy"
-						target="_blank"
-						rel="noopener"
-						class="flex items-center transition md:justify-center md:hover:scale-105"
-						><Badge>Open to Work</Badge></a
-					>
-				</div>
-			</h1>
-			<h2 class="text-2xl text-wrap">
-				<span class="font-semibold"
-					>+14 years experience Lawyer</span
-				><span class="presentation-span font-semibold"
-					>turned Full Stack Developer</span
-				>🧑🏻‍💻 from Argentina. 📍 Madrid-based. Committed to
-				leveraging legal expertise for innovative tech
-				solutions.
-			</h2>
-			<ul></ul>
-		</section>
+		<Hero />
+		<Experience />
 	</main>
 </Layout>
