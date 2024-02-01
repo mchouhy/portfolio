@@ -1,0 +1,12 @@
+.presentation-span {
+      background: -webkit-linear-gradient(45deg, 
+    #f8ab5e, 
+    #f36961, 
+    #a176c8, 
+    #759beb, 
+    #65beb3, 
+    #70db96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+} 
