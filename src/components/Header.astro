@@ -1,25 +1,25 @@
 ---
 const navLinks = [
       {
-            class: "hover:font-bold hover:text-[#f8ab5e]",
+            class: "header-link",
             label: "experience",
             href: "/#experience",
             title: "Experience",
       },
       {
-            class: "hover:font-bold hover:text-[#f8ab5e]",
+            class: "header-link",
             label: "projects",
             href: "/#projects",
             title: "Projects",
       },
       {
-            class: "hover:font-bold hover:text-[#f8ab5e]",
+            class: "header-link",
             label: "about",
             href: "/#about",
             title: "About",
       },
       {
-            class: "hover:font-bold hover:text-[#f8ab5e]",
+            class: "header-link",
             label: "contact",
             href: "/#contact",
             title: "Contact",
@@ -42,3 +42,20 @@ const navLinks = [
             }
       </nav>
 </header>
+      <style>
+            .header-link:hover{
+                  font-weight: 700;
+                  background: -webkit-linear-gradient(
+                        45deg,
+                        #f8ab5e,
+                        #f36961,
+                        #a176c8,
+                        #759beb,
+                        #65beb3,
+                        #70db96
+                  );
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+            }
+      </style>
