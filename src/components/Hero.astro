@@ -1,41 +1,43 @@
 ---
-import Badge from "./Badge.astro"
-import SocialPills from "./SocialPills.astro"
+import Badge from "./Badge.astro";
+import SocialPills from "./SocialPills.astro";
 ---
 
-<section class="w-full lg:w-[740px] mx-auto py-20 mb-44">
-      <img
-            class="rounded-full w-24 h-24 mb-4"
-            src="../../public/images/mchouhy-photo.jpeg"
-            alt="mchouhy-logo"
-      />
-      <h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
-            Hey, I'm Mariano Chouhy
+<div class="max-w-xl">
+      <div class="flex gap-5 mb-4">
+            <img
+                  class="rounded-full size-20"
+                  src="../../public/images/mchouhy-photo.jpeg"
+                  alt="mchouhy-logo"
+            />
             <div class="flex items-center">
                   <a
                         href="https://linkedin.com/in/mchouhy"
                         target="_blank"
                         rel="noopener"
-                        class="flex items-center transition md:justify-center md:hover:scale-105"
+                        class="flex items-center transition md:justify-center hover:scale-110"
                         ><Badge>Open to Work</Badge></a
                   >
             </div>
-      </h1>
-      <h2 class="text-2xl text-wrap pb-4">
-            <span class="font-bold"
-                  >+14 years experienced Lawyer</span
-            ><span class="presentation-span font-bold"
+      </div>
+      <strong
+            class="tracking-tight text-5xl sm:text-5xl font-bold flex flex-col-reverse gap-y-3 gap-x-4 mb-4 xs:flex-row md:flex-row lg:flex-row"
+      >
+            Hey, I'm Mariano Chouhy
+      </strong>
+      <h2 class="text-xl xs:text-xl sm:text-2xl text-pretty">
+            <span class="font-bold">+14 years experienced Lawyer</span>
+            <span class="presentation-span font-bold"
                   >turned Full Stack Developer</span
-            > from Argentina 🇦🇷. Madrid-based 🇪🇸. <span
-                  class="font-medium"
-                  >Committed to leveraging legal expertise for
-                  innovative tech solutions.</span
+            >
+            <span>from Argentina 🇦🇷. Madrid-based 🇪🇸.</span>
+            <span class="font-medium"
+                  >Committed to leveraging legal expertise for innovative tech
+                  solutions.</span
             >
       </h2>
-      <ul>
-         <SocialPills />   
-      </ul>
-</section>
+      <SocialPills />
+</div>
 <style>
       .presentation-span {
             background: -webkit-linear-gradient(
@@ -50,6 +52,5 @@ import SocialPills from "./SocialPills.astro"
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            padding-left: 10px;
       }
 </style>
