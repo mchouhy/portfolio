@@ -2,23 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Experience from "../components/Experience.astro";
-import Section from "../components/Section.astro";
 ---
 
 <Layout title="Mariano Chouhy - Portfolio">
 	<main class="px-2">
-		<Section class="py-24 md:py-36">
-			<Hero />
-		</Section>
+		<Hero />
 		<div class="space-y-24">
-			<Section id="experience">
-				<h2
-					class="tracking-tight text-3xl sm:text-5xl font-semibold mb-6"
-				>
-					Experience
-				</h2>
-				<Experience />
-			</Section>
+			<Experience />
 		</div>
 	</main>
 </Layout>

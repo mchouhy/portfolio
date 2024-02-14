@@ -28,7 +28,7 @@ const navLinks = [
 ---
 
 <header class="flex justify-center items-center pt-4">
-      <nav class="flex flex-row gap-x-6 text-sm font-medium">
+      <nav class="flex flex-row gap-x-6 text-sm font-semibold">
             {
                   navLinks.map((link) => (
                         <a
@@ -44,18 +44,12 @@ const navLinks = [
 </header>
       <style>
             .header-link:hover{
-                  font-weight: 700;
-                  background: -webkit-linear-gradient(
-                        45deg,
-                        #f8ab5e,
-                        #f36961,
-                        #a176c8,
-                        #759beb,
-                        #65beb3,
-                        #70db96
-                  );
+                  font-weight: 800;
+                  background:#f8ab5e;
                   -webkit-background-clip: text;
                   background-clip: text;
                   -webkit-text-fill-color: transparent;
+                  text-decoration:underline #f8ab5e;
+                  text-underline-offset:calc(5px);
             }
       </style>
