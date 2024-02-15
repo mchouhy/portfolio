@@ -1,0 +1,149 @@
+---
+const EXPERIENCE = [
+      {
+            time: "2022-Now",
+            position: "Lawyer",
+            company: "The Legal Department & Partners",
+            location: "Madrid, Spain",
+            description:
+                  "As an international criminal lawyer in Madrid, I provide legal counsel across various litigations, conduct thorough investigations, and draft submissions for national and international courts, including the European Court of Human Rights, Court of Justice of the European Union, and Inter-American Court of Human Rights.",
+      },
+      {
+            time: "2010-2021",
+            position: "Court Clerk",
+            company: "National Chamber of Appeals in Economic Criminal Matters",
+            location: "Buenos Aires, Argentina",
+            description:
+                  "As Court Clerk in Buenos Aires, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
+      },
+      {
+            time: "2010",
+            position: "Paralegal",
+            company: "Bazan, Cambré & Orts Law Firm",
+            location: "Buenos Aires, Argentina",
+            description:
+                  "As Court Clerk, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
+      },
+      {
+            time: "2008-2009",
+            position: "Ski Instructor",
+            company: "Aspen Skiing Company",
+            location: "Aspen, CO, USA",
+            description:
+                  "As a ski instructor at Buttermilk Mountain for Aspen Skiing Company, I provided personalized skiing instruction to guests of all skill levels, ensuring a safe and enjoyable experience on the slopes.",
+      },
+      {
+            time: "2008-2009",
+            position: "Sales Agent",
+            company: "Hertz",
+            location: "Aspen Pitkin Airport, CO, USA",
+            description:
+                  "As a sales agent at Hertz in Aspen Airport, I assisted customers with vehicle rentals, provided excellent customer service, and ensure smooth rental transactions.",
+      },
+];
+---
+
+<ol class="relative border-s border-gray-400 dark:border-gray-700">
+      {
+            EXPERIENCE.map((job) => (
+                  <>
+                        <div class="absolute w-3 h-3 bg-gray-400 rounded-full mt-8 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                        <li class="ophidden mb-10 ms-4">
+                              <div class="p-5 mb-4 border border-gray-300 rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700">
+                                    <div class="p-y-8">
+                                          <time class="mb-2 text-sm font-semibold leading-none text-[#f8ab5e] dark:text-gray-500">
+                                                {job.time}
+                                          </time>
+                                          <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">
+                                                {job.position}
+                                          </h3>
+                                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                                {job.company}
+                                          </h3>
+                                          <span
+                                                class="mb-4 inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400"
+                                          >
+                                                <svg
+                                                      class="w-2.5 h-2.5 me-1"
+                                                      aria-hidden="true"
+                                                      xmlns="http://www.w3.org/2000/svg"
+                                                      fill="currentColor"
+                                                      viewBox="0 0 20 20"
+                                                >
+                                                      <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                                                </svg>
+                                                {job.location}
+                                          </span>
+                                    </div>
+                                    <p class="mb-4 pr-24 text-sm font-semibold text-gray-900 dark:text-gray-400">
+                                          {job.description}
+                                    </p>
+                                    <a
+                                          href="#"
+                                          class="inline-flex items-center px-4 py-2 dark:hover:text-white 
+                                           me-2 mb-2
+                                          text-sm text-gray-900 font-medium rounded-full
+                                          bg-white border border-gray-300
+                                          focus:ring-4 focus:outline-none focus:ring-gray-200
+                                          hover:bg-black hover:scale-110 hover:text-white
+                                          transition
+                                          dark:text-white
+                                          dark:border-gray-600 dark:bg-gray-800
+                                          dark:hover:border-gray-600 dark:hover:bg-gray-700
+                                          dark:focus:ring-gray-700"
+                                    >
+                                          Learn more{" "}
+                                          <svg
+                                                class="w-3 h-3 ms-2 rtl:rotate-180"
+                                                aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 14 10"
+                                          >
+                                                <path
+                                                      stroke="currentColor"
+                                                      stroke-linecap="round"
+                                                      stroke-linejoin="round"
+                                                      stroke-width="2"
+                                                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                                                />
+                                          </svg>
+                                    </a>
+                              </div>
+                        </li>
+                  </>
+            ))
+      }
+</ol>
+<style is:global>
+      .ophidden {
+            opacity: 0;
+            filter: blur(8px);
+            transform: rotateX(300deg);
+            transition: all 1.2s;
+      }
+      .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: rotateX(0);
+      }
+
+      @media (prefers-reduced-motion) {
+            .ophidden {
+                  transition: none;
+            }
+      }
+</style>
+<script>
+      const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                  } else {
+                        entry.target.classList.remove("show");
+                  }
+            });
+      });
+      const hiddenElements = document.querySelectorAll(".ophidden");
+      hiddenElements.forEach((element) => observer.observe(element));
+</script>
