@@ -27,11 +27,12 @@ const navLinks = [
 ];
 ---
 
-<header class="flex justify-center items-center pt-4">
-      <nav class="flex flex-row gap-x-6 text-sm font-semibold">
+<header class="flex justify-center items-center pt-6">
+      <nav id="navbar" class="flex flex-row gap-x-6 text-sm font-semibold">
             {
                   navLinks.map((link) => (
                         <a
+                              id="nav-links"
                               class={link.class}
                               href={link.href}
                               aria-label={link.label}
@@ -42,14 +43,44 @@ const navLinks = [
             }
       </nav>
 </header>
-      <style>
-            .header-link:hover{
-                  font-weight: 800;
-                  background:#f8ab5e;
-                  -webkit-background-clip: text;
-                  background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  text-decoration:underline #f8ab5e;
-                  text-underline-offset:calc(5px);
+<style>
+      .header-link:hover {
+            font-weight: 800;
+            background: #f8ab5e;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: underline #f8ab5e;
+            text-underline-offset: calc(5px);
+      }
+
+      .navFixed {
+            z-index: 3;
+            position: fixed;
+            padding: 0.5rem 1.4rem;
+            border-radius: 9999px;
+            margin-inline-end: 0.5rem;
+            background: rgb(209 213 219 / 0.6);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            backdrop-filter: blur(8px);
+      }
+
+      .navLinks {
+      }
+</style>
+<script>
+      const navElement = document.getElementById("navbar");
+      const navLinks = document.getElementById("nav-links")
+      window.addEventListener("scroll", () => {
+            if (
+                  document.body.scrollTop > 0 ||
+                  document.documentElement.scrollTop > 0
+            ) {
+                  navElement?.classList.add("navFixed")
+                  navLinks?.classList.add("navLinks")
+            } else {
+                  navElement?.classList.remove("navFixed")
+                  navLinks?.classList.remove("navLinks")
             }
-      </style>
+      });
+</script>
