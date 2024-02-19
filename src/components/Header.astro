@@ -73,8 +73,8 @@ const navLinks = [
       const navLinks = document.getElementById("nav-links")
       window.addEventListener("scroll", () => {
             if (
-                  document.body.scrollTop > 0 ||
-                  document.documentElement.scrollTop > 0
+                  document.body.scrollTop > 60 ||
+                  document.documentElement.scrollTop > 60
             ) {
                   navElement?.classList.add("navFixed")
                   navLinks?.classList.add("navLinks")

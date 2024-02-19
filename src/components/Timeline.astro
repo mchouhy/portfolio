@@ -1,57 +1,62 @@
 ---
 const EXPERIENCE = [
       {
-            time: "2022-Now",
+            time: "2022 > Now",
+            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#70db96]",
             position: "Lawyer",
             company: "The Legal Department & Partners",
             location: "Madrid, Spain",
             description:
-                  "As an international criminal lawyer in Madrid, I provide legal counsel across various litigations, conduct thorough investigations, and draft submissions for national and international courts, including the European Court of Human Rights, Court of Justice of the European Union, and Inter-American Court of Human Rights.",
+            "As an international criminal lawyer in Madrid, I provide legal counsel across various litigations, conduct thorough investigations, and draft submissions for national and international courts, including the European Court of Human Rights, Court of Justice of the European Union, and Inter-American Court of Human Rights.",
       },
       {
-            time: "2010-2021",
+            time: "2010 > 2021",
+            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
             position: "Court Clerk",
-            company: "National Chamber of Appeals in Economic Criminal Matters",
+            company: "Court of Corporate Criminal Appeals",
             location: "Buenos Aires, Argentina",
             description:
-                  "As Court Clerk in Buenos Aires, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
+            "As Court Clerk in Buenos Aires, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
       },
       {
             time: "2010",
+            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
             position: "Paralegal",
             company: "Bazan, Cambré & Orts Law Firm",
             location: "Buenos Aires, Argentina",
             description:
-                  "As Court Clerk, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
+            "As Court Clerk, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
       },
       {
-            time: "2008-2009",
+            time: "2008 > 2009",
+            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
             position: "Ski Instructor",
             company: "Aspen Skiing Company",
             location: "Aspen, CO, USA",
             description:
-                  "As a ski instructor at Buttermilk Mountain for Aspen Skiing Company, I provided personalized skiing instruction to guests of all skill levels, ensuring a safe and enjoyable experience on the slopes.",
+            "As a ski instructor at Buttermilk Mountain for Aspen Skiing Company, I provided personalized skiing instruction to guests of all skill levels, ensuring a safe and enjoyable experience on the slopes.",
       },
       {
-            time: "2008-2009",
+            time: "2008 > 2009",
+            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
             position: "Sales Agent",
             company: "Hertz",
             location: "Aspen Pitkin Airport, CO, USA",
             description:
-                  "As a sales agent at Hertz in Aspen Airport, I assisted customers with vehicle rentals, provided excellent customer service, and ensure smooth rental transactions.",
+            "As a sales agent at Hertz in Aspen Airport, I assisted customers with vehicle rentals, provided excellent customer service, and ensure smooth rental transactions.",
       },
 ];
 ---
 
-<ol class="relative border-s border-gray-400 dark:border-gray-700">
+<ol class="relative border-s max-w-4xl border-gray-400 dark:border-gray-700">
       {
             EXPERIENCE.map((job) => (
                   <>
-                        <div class="absolute w-3 h-3 bg-gray-400 rounded-full mt-8 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                        <div class="absolute w-3 h-3 bg-gray-900 rounded-full mt-8 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
                         <li class="ophidden mb-10 ms-4">
-                              <div class="p-5 mb-4 border border-gray-300 bg-gray-100 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                              <div id="time-div" class={job.class}>
                                     <div class="p-y-8">
-                                          <time class="mb-2 text-sm font-semibold leading-none text-[#f8ab5e] dark:text-gray-500">
+                                          <time class="mb-2 text-base font-bold leading-none dark:text-gray-500 time-text-color">
                                                 {job.time}
                                           </time>
                                           <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">
@@ -60,9 +65,7 @@ const EXPERIENCE = [
                                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                                                 {job.company}
                                           </h3>
-                                          <span
-                                                class="mb-4 inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400"
-                                          >
+                                          <span class="mb-4 inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
                                                 <svg
                                                       class="w-2.5 h-2.5 me-1"
                                                       aria-hidden="true"
@@ -126,6 +129,14 @@ const EXPERIENCE = [
             opacity: 1;
             filter: blur(0);
             transform: rotateX(0);
+      }
+
+      .time-text-red {
+            color: #f36961
+      }
+
+      .time-text-green {
+            color: #70db96
       }
 
       @media (prefers-reduced-motion) {
