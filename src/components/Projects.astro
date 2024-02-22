@@ -10,18 +10,34 @@ import Brackets from "../components/Brackets.astro"
       <Brackets class="size-8"/>      
       Projects
       </h2>
-      <div class="project-wrapper">
-            <div class="relative h-[1200px]">
-                  <div class="bg-red-800 absolute top-4 left-4 w-[576px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-4 left-[608px] w-[280px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-4 left-[904px] w-[280px] h-[576px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-[312px] left-4 w-[280px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-[312px] left-[312px] w-[280px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-4 left-4 w-[576px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-4 left-4 w-[576px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-4 left-4 w-[576px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-4 left-4 w-[576px] h-[280px] rounded-[32px]"></div>
-                  <div class="bg-red-800 absolute top-4 left-4 w-[576px] h-[280px] rounded-[32px]"></div>
-            </div>
+      <div class="wrapper">
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>    
       </div>
 </Section>
+<style>
+      .wrapper {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "tleft tleft tcentral tright"
+                                 "cleft ccleft ccbright cright"
+                                 "bleft bleft  ccbright bright";
+      }
+
+      .box {
+            background-color: brown;
+            border-radius: 32px;
+            min-height: 17.5rem;
+            text-align: center;
+            font-size: larger;
+            font-weight: 900;
+      }
+</style>
