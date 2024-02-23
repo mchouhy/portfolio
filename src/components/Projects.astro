@@ -11,25 +11,27 @@ import Brackets from "../components/Brackets.astro"
       Projects
       </h2>
       <div class="wrapper">
-            <div class="box">1</div>
-            <div class="box">1</div>
-            <div class="box">1</div>
-            <div class="box">1</div>
-            <div class="box">1</div>
-            <div class="box">1</div>
-            <div class="box">1</div>
-            <div class="box">1</div>    
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3 flex">
+                  <img class="box3 max-w-full h-auto rounded-[32px]" src="../../public/images/gaucha-mobile.jpg" alt="">
+            </div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+            <div class="box box6">6</div>
+            <div class="box box7">7</div>
+            <div class="box box8">8</div>    
       </div>
 </Section>
 <style>
       .wrapper {
             display: grid;
             grid-gap: 1rem;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-areas: "tleft tleft tcentral tright"
-                                 "cleft ccleft ccbright cright"
-                                 "bleft bleft  ccbright bright";
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-areas: "one   one   two  three"
+                                 "four  five  six  three"
+                                 "seven seven six  eight";
       }
 
       .box {
@@ -39,5 +41,32 @@ import Brackets from "../components/Brackets.astro"
             text-align: center;
             font-size: larger;
             font-weight: 900;
+      }
+
+      .box1 {grid-area: one;
+            background-color:#f8ab5e;}
+      .box2 {grid-area: two;
+            background-color:#f36961;}
+      .box3 {grid-area: three;
+            background-color:#a176c8;}
+      .box4 {grid-area: four;
+            background-color:#759beb;}
+      .box5 {grid-area: five;
+            background-color:#65beb3;}
+      .box6 {grid-area: six;
+            background-color:#70db96;}
+      .box7 {grid-area: seven;
+            background-color:#f8ab5e;}
+      .box8 {grid-area: eight;
+            background-color:#f8ab5e;}                  
+      @media (max-width: 1150px) {
+            .wrapper {
+                  grid-template-columns: repeat(3, minmax(250px, 1fr));
+                  grid-template-rows: repeat(4, minmax(250px, 1fr));
+                  grid-template-areas: "one    one    five"
+                                       "seven   two    three"
+                                       "seven  six    three"
+                                       "four  six  eight";
+            }
       }
 </style>
