@@ -61,26 +61,25 @@ const navLinks = [
             border-radius: 9999px;
             margin-inline-end: 0.5rem;
             background: rgb(209 213 219 / 0.6);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            box-shadow:
+                  0 10px 15px -3px rgb(0 0 0 / 0.1),
+                  0 4px 6px -4px rgb(0 0 0 / 0.1);
             backdrop-filter: blur(8px);
-      }
-
-      .navLinks {
       }
 </style>
 <script>
       const navElement = document.getElementById("navbar");
-      const navLinks = document.getElementById("nav-links")
+      const navLinks = document.getElementById("nav-links");
       window.addEventListener("scroll", () => {
             if (
                   document.body.scrollTop > 60 ||
                   document.documentElement.scrollTop > 60
             ) {
-                  navElement?.classList.add("navFixed")
-                  navLinks?.classList.add("navLinks")
+                  navElement?.classList.add("navFixed");
+                  navLinks?.classList.add("navLinks");
             } else {
-                  navElement?.classList.remove("navFixed")
-                  navLinks?.classList.remove("navLinks")
+                  navElement?.classList.remove("navFixed");
+                  navLinks?.classList.remove("navLinks");
             }
       });
 </script>
