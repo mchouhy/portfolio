@@ -1,89 +1,104 @@
 ---
 const EXPERIENCE = [
-      {
-            time: "2022 > Now",
-            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#70db96]",
-            position: "Lawyer",
-            company: "The Legal Department & Partners",
-            location: "Madrid, Spain",
-            description:
-            "As an international criminal lawyer, I provide legal counsel across various litigations, conduct thorough investigations, and draft submissions for national and international courts, including the European Court of Human Rights, Court of Justice of the European Union, and Inter-American Court of Human Rights.",
-      },
-      {
-            time: "2010 > 2021",
-            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
-            position: "Court Clerk",
-            company: "Court of Corporate Criminal Appeals",
-            location: "Buenos Aires, Argentina",
-            description:
-            "As Court Clerk, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
-      },
-      {
-            time: "2010",
-            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
-            position: "Paralegal",
-            company: "Bazan, Cambré & Orts Law Firm",
-            location: "Buenos Aires, Argentina",
-            description:
-            "As paralegal, my responsibilities encompass drafting legal documents, conducting legal research, interviewing clients, and monitoring judicial proceedings. Additionally, I provide support to attorneys across various legal domains including civil, commercial, labor, administrative, and criminal proceedings.",
-      },
-      {
-            time: "2008 > 2009",
-            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
-            position: "Ski Instructor",
-            company: "Aspen Skiing Company",
-            location: "Aspen, CO, USA",
-            description:
-            "Provided personalized skiing instruction to guests of all skill levels, ensuring a safe and enjoyable experience at Buttermilk Mountain. I'm a certified PSIA instructor.",
-      },
-      {
-            time: "2008 > 2009",
-            class: "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
-            position: "Sales Agent",
-            company: "Hertz",
-            location: "Aspen Pitkin Airport, CO, USA",
-            description:
-            "Assisted customers with vehicle rentals, provided excellent customer service, and ensure smooth rental transactions.",
-      },
+  {
+    time: "2024 > Now",
+    class:
+      "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#70db96]",
+    position: "Front-End Developer",
+    company: "Flat.mx",
+    location: "CDMX, México",
+    description:
+      "As a member of the development team, I focus on crafting the front-end for various platforms including Flat for Agents (FpA), Website, and Unified Admin console. My role involves integrating a suite of tools such as HubSpot, Zapier, Make, along with Flat's internal tools. On a daily basis, I work with TypeScript, Next.js, Node.js, and Tailwind CSS.",
+  },
+  {
+    time: "2022 > Now",
+    class:
+      "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#70db96]",
+    position: "Lawyer",
+    company: "The Legal Department & Partners",
+    location: "Madrid, Spain",
+    description:
+      "As an international criminal lawyer, I provide legal counsel across various litigations, conduct thorough investigations, and draft submissions for national and international courts, including the European Court of Human Rights, Court of Justice of the European Union, and Inter-American Court of Human Rights.",
+  },
+  {
+    time: "2010 > 2021",
+    class:
+      "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
+    position: "Court Clerk",
+    company: "Court of Corporate Criminal Appeals",
+    location: "Buenos Aires, Argentina",
+    description:
+      "As Court Clerk, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
+  },
+  {
+    time: "2010",
+    class:
+      "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
+    position: "Paralegal",
+    company: "Bazan, Cambré & Orts Law Firm",
+    location: "Buenos Aires, Argentina",
+    description:
+      "As paralegal, my responsibilities encompass drafting legal documents, conducting legal research, interviewing clients, and monitoring judicial proceedings. Additionally, I provide support to attorneys across various legal domains including civil, commercial, labor, administrative, and criminal proceedings.",
+  },
+  {
+    time: "2008 > 2009",
+    class:
+      "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
+    position: "Ski Instructor",
+    company: "Aspen Skiing Company",
+    location: "Aspen, CO, USA",
+    description:
+      "Provided personalized skiing instruction to guests of all skill levels, ensuring a safe and enjoyable experience at Buttermilk Mountain. I'm a certified PSIA instructor.",
+  },
+  {
+    time: "2008 > 2009",
+    class:
+      "p-5 mb-4 border border-gray-300 bg-gray-50/55 rounded-lg dark:bg-gray-800 dark:border-gray-700 text-[#f36961]",
+    position: "Sales Agent",
+    company: "Hertz",
+    location: "Aspen Pitkin Airport, CO, USA",
+    description:
+      "Assisted customers with vehicle rentals, provided excellent customer service, and ensure smooth rental transactions.",
+  },
 ];
 ---
 
 <ol class="relative border-s max-w-4xl border-gray-400 dark:border-gray-700">
-      {
-            EXPERIENCE.map((job) => (
-                  <>
-                        <div class="absolute w-3 h-3 bg-gray-900 rounded-full mt-8 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
-                        <li class="ophidden mb-10 ms-4">
-                              <div id="time-div" class={job.class}>
-                                    <div class="p-y-8">
-                                          <time class="mb-2 text-base font-bold leading-none dark:text-gray-500 time-text-color">
-                                                {job.time}
-                                          </time>
-                                          <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">
-                                                {job.position}
-                                          </h3>
-                                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                                                {job.company}
-                                          </h3>
-                                          <span class="mb-4 inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
-                                                <svg
-                                                      class="w-2.5 h-2.5 me-1"
-                                                      aria-hidden="true"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      fill="currentColor"
-                                                      viewBox="0 0 20 20"
-                                                >
-                                                      <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
-                                                </svg>
-                                                {job.location}
-                                          </span>
-                                    </div>
-                                    <p class="mb-4 pr-24 text-sm font-semibold text-gray-900 dark:text-gray-400">
-                                          {job.description}
-                                    </p>
-                                    <a
-                                          href="#"
-                                          class="inline-flex items-center px-4 py-2 dark:hover:text-white 
+  {
+    EXPERIENCE.map((job) => (
+      <>
+        <div class="absolute w-3 h-3 bg-gray-900 rounded-full mt-8 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+        <li class="ophidden mb-10 ms-4">
+          <div id="time-div" class={job.class}>
+            <div class="p-y-8">
+              <time class="mb-2 text-base font-bold leading-none dark:text-gray-500 time-text-color">
+                {job.time}
+              </time>
+              <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">
+                {job.position}
+              </h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                {job.company}
+              </h3>
+              <span class="mb-4 inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                <svg
+                  class="w-2.5 h-2.5 me-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                </svg>
+                {job.location}
+              </span>
+            </div>
+            <p class="mb-4 pr-24 text-sm font-semibold text-gray-900 dark:text-gray-400">
+              {job.description}
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-4 py-2 dark:hover:text-white 
                                            me-2 mb-2
                                           text-sm text-gray-900 font-medium rounded-full
                                           bg-white border border-gray-300
@@ -94,67 +109,67 @@ const EXPERIENCE = [
                                           dark:border-gray-600 dark:bg-gray-800
                                           dark:hover:border-gray-600 dark:hover:bg-gray-700
                                           dark:focus:ring-gray-700"
-                                    >
-                                          Learn more{" "}
-                                          <svg
-                                                class="w-3 h-3 ms-2 rtl:rotate-180"
-                                                aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 14 10"
-                                          >
-                                                <path
-                                                      stroke="currentColor"
-                                                      stroke-linecap="round"
-                                                      stroke-linejoin="round"
-                                                      stroke-width="2"
-                                                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                                                />
-                                          </svg>
-                                    </a>
-                              </div>
-                        </li>
-                  </>
-            ))
-      }
+            >
+              Learn more{" "}
+              <svg
+                class="w-3 h-3 ms-2 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </li>
+      </>
+    ))
+  }
 </ol>
 <style is:global>
-      .ophidden {
-            opacity: 0;
-            filter: blur(8px);
-            transform: rotateX(300deg);
-            transition: all 800ms;
-      }
-      .show {
-            opacity: 1;
-            filter: blur(0);
-            transform: rotateX(0);
-      }
+  .ophidden {
+    opacity: 0;
+    filter: blur(8px);
+    transform: rotateX(300deg);
+    transition: all 800ms;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: rotateX(0);
+  }
 
-      .time-text-red {
-            color: #f36961
-      }
+  .time-text-red {
+    color: #f36961;
+  }
 
-      .time-text-green {
-            color: #70db96
-      }
+  .time-text-green {
+    color: #70db96;
+  }
 
-      @media (prefers-reduced-motion) {
-            .ophidden {
-                  transition: none;
-            }
-      }
+  @media (prefers-reduced-motion) {
+    .ophidden {
+      transition: none;
+    }
+  }
 </style>
 <script>
-      const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                  if (entry.isIntersecting) {
-                        entry.target.classList.add("show");
-                  } else {
-                        entry.target.classList.remove("show");
-                  }
-            });
-      });
-      const hiddenElements = document.querySelectorAll(".ophidden");
-      hiddenElements.forEach((element) => observer.observe(element));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  });
+  const hiddenElements = document.querySelectorAll(".ophidden");
+  hiddenElements.forEach((element) => observer.observe(element));
 </script>
