@@ -1,0 +1,77 @@
+---
+import CSS from "../icons/CSS.astro";
+import HTML from "../icons/HTML.astro";
+import JavaScript from "../icons/JavaScript.astro";
+---
+
+<div
+  class="relative group col-span-3 row-span-4 col-start-1 row-start-9 max-h-[500px] overflow-hidden rounded-xl bg-[url('/public/images/palindrome-1.png')] bg-cover"
+>
+  <div
+    class="absolute h-full w-full bg-black/20 flex flex-col items-center justify-center group-hover:botom-0 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:backdrop-blur-lg"
+  >
+    <div class="px-14 flex flex-col gap-y-2">
+      <h2 class="font-semibold text-2xl">Palindrome</h2>
+      <div class="flex flex-col gap-y-2">
+        <h3 class="font-medium text-lg">Web app palindrome checker</h3>
+        <p class="font-normal">
+          Developed a web app that checks if a word is a palindrome or not with
+          a simple and clean UI
+        </p>
+      </div>
+
+      <div class="flex gap-2 text-pretty flex-wrap">
+        <span
+          class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+        >
+          <HTML />
+          HTML
+        </span>
+        <span
+          class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+        >
+          <CSS />
+          CSS
+        </span>
+        <span
+          class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+        >
+          <JavaScript />
+          JavaScript
+        </span>
+      </div>
+      <a
+        href="https://mchouhy.github.io/pixelconverter/#calculator-container"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center mt-4 w-fit px-4 py-2 dark:hover:text-white
+                                        
+                                          text-sm text-gray-900 font-medium rounded-full
+                                          bg-white border border-gray-300
+                                          focus:ring-4 focus:outline-none focus:ring-gray-200
+                                          hover:ring-4 hover:ring-gray-100
+                                          transition
+                                          dark:text-white
+                                          dark:border-gray-600 dark:bg-gray-800
+                                          dark:hover:border-gray-600 dark:hover:bg-gray-700
+                                          dark:focus:ring-gray-700"
+      >
+        Web{" "}
+        <svg
+          class="w-3 h-3 ms-2 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
