@@ -1,0 +1,312 @@
+{
+  "basics": {
+    "title": "Hey, I'm Mariano Chouhy",
+    "name": "Mariano Chouhy",
+    "label": "Frontend Developer with a unique mix of technical expertise, business insight, and clear communication. I bridge development and product strategy to create intuitive, high-impact solutions.",
+    "image": "/images/profile-pic.jpeg",
+    "email": "marianochouhy@gmail.com",
+    "phone": "+34613168703",
+    "url": "",
+    "summary": "I'm skilled in TypeScript, Next.js, Node.js, and Tailwind CSS. With a legal background, I bring a unique ability to connect business, product, and technology, ensuring development aligns with real user needs and strategic goals. Strong communication, ownership, and problem-solving define my approach, allowing me to craft intuitive interfaces while bridging the gap between technical and non-technical teams. Passionate about creating scalable, impactful solutions in dynamic environments.",
+    "location": {
+      "address": "Sierra de Atapuerca, 31",
+      "postalCode": "28050",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "country": "Spain"
+    },
+    "networks": {
+      "Linkedin": {
+        "username": "mchouhy",
+        "url": "https://www.linkedin.com/in/mchouhy/"
+      },
+      "Github": {
+        "username": "mchouhy",
+        "url": "https://github.com/mchouhy"
+      }
+    }
+  },
+  "work": [
+    {
+      "company": "Clau",
+      "location": "CDMX, Mexico",
+      "employmentType": "Full-time",
+      "position": "Frontend Developer",
+      "url": "https://www.clau.com",
+      "startDate": "2024-03-12",
+      "endDate": null,
+      "summary": "As a member of the development team, I focus on crafting the front-end for various platforms including Clau for Agents (FpA), Website, and Unified Admin console. My role involves integrating a suite of tools such as HubSpot, Zapier, Make, along with Flat's internal tools. On a daily basis, I work with TypeScript, Next.js, Node.js, and Tailwind CSS.",
+      "highlights": [""]
+    },
+    {
+      "company": "The Legal Department & Partners",
+      "location": "Madrid, Spain",
+      "employmentType": "Part-time",
+      "position": "Lawyer",
+      "url": null,
+      "startDate": "2022-02-05",
+      "endDate": null,
+      "summary": "I provide legal counsel across criminal, civil, and administrative litigation, conduct comprehensive legal investigations and draft settlements, appeals, and legal documentation for submission to national and international courts, including the European Court of Human Rights, Court of Justiceof the European Union, and Inter-American Court of Human Rights (CIDH).",
+      "highlights": [""]
+    },
+    {
+      "company": "Poder Judicial de la Nación Argentina",
+      "location": "Buenos Aires, Argentina",
+      "employmentType": null,
+      "position": "Court Clerk",
+      "url": "https://pjn.gov.ar",
+      "startDate": "2010-06-15",
+      "endDate": "2021-09-30",
+      "summary": "I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
+      "highlights": [""]
+    },
+    {
+      "company": "Bazan, Cambré & Orts",
+      "location": "Buenos Aires, Argentina",
+      "employmentType": null,
+      "position": "Paralegal",
+      "url": "https://www.bcoabogados.com.ar/index.php/es/",
+      "startDate": "2010-03-15",
+      "endDate": "2010-06-14",
+      "summary": "As paralegal, my responsibilities encompass drafting legal documents, conducting legal research, interviewing clients, and monitoring judicial proceedings. Additionally, I provide support to attorneys across various legal domains including civil, commercial, labor, administrative, and criminal proceedings.",
+      "highlights": [""]
+    },
+    {
+      "company": "Aspen Skiing Company",
+      "location": "Aspen, Colorado",
+      "employmentType": null,
+      "position": "Proffesional Ski Instructor",
+      "url": "https://www.aspensnowmass.com/",
+      "startDate": "2008-12-05",
+      "endDate": "2009-03-15",
+      "summary": "Provided personalized skiing instruction to guests of all skill levels, ensuring a safe and enjoyable experience at Buttermilk Mountain. I'm a certified PSIA instructor.",
+      "highlights": [""]
+    },
+    {
+      "company": "Hertz",
+      "location": "Aspen, Colorado",
+      "employmentType": null,
+      "position": "Sales Agent",
+      "url": "https://www.hertz.com/us/en/location/unitedstates",
+      "startDate": "2008-12-18",
+      "endDate": "2009-03-15",
+      "summary": "Assisted customers with vehicle rentals, provided excellent customer service, and ensure smooth rental transactions.",
+      "highlights": [""]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Coderhouse",
+      "url": "https://www.coderhouse.com/es/online/carrera-desarrollo-fullstack",
+      "area": "Software Development",
+      "studyType": "Course",
+      "startDate": "2023-04-01",
+      "endDate": "2024-07-23",
+      "summary": "Full Stack Development Career.",
+      "courses": [
+        "JavaScript",
+        "React JS",
+        "HTML",
+        "CSS",
+        "Node JS",
+        "Mongo DB"
+      ]
+    },
+    {
+      "institution": "Universidad Carlos III de Madrid",
+      "url": "https://www.uc3m.es/master/derecho-penal",
+      "area": "Criminal Law",
+      "studyType": "Master",
+      "startDate": "2021-09-01",
+      "endDate": "2022-09-01",
+      "summary": "Master in Criminal Law and Procedural Law.",
+      "courses": []
+    },
+    {
+      "institution": "Universidad Torcuato Di Tella",
+      "url": "https://www.utdt.edu/ver_contenido.php?id_contenido=908&id_item_menu=1132",
+      "area": "Tax Law",
+      "studyType": "Master",
+      "startDate": "2016-03-01",
+      "endDate": "2018-05-01",
+      "summary": "LL.M. in Tax Law.",
+      "courses": []
+    },
+    {
+      "institution": "Universidad de Buenos Aires",
+      "url": "http://www.derecho.uba.ar/academica/carreras_grado/abogacia.php",
+      "area": "Law",
+      "studyType": "Bachelor of Laws",
+      "startDate": "2005-03-01",
+      "endDate": "2011-12-01",
+      "summary": "Law Degree.",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["HTML5", "Semantic HTML", "Web Accessibility"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["CSS3", "Responsive Design", "Flexbox", "Grid"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["ES6+", "DOM Manipulation", "Async Programming", "Promises"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Intermediate",
+      "keywords": ["Utility-First CSS", "Responsive Design", "Customization"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": ["Static Typing", "Interfaces", "Generics", "Type Inference"]
+    },
+    {
+      "name": "Node.js",
+      "level": "Intermediate",
+      "keywords": ["Express.js", "API Development", "Asynchronous Programming"]
+    },
+    {
+      "name": "Git",
+      "level": "Master",
+      "keywords": ["Version Control", "Branching", "Merging", "Rebasing"]
+    },
+    {
+      "name": "Github",
+      "level": "Master",
+      "keywords": [
+        "Repository Management",
+        "Pull Requests",
+        "CI/CD Integration"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": [
+        "Server-Side Rendering",
+        "Static Site Generation",
+        "API Routes"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Master",
+      "keywords": [
+        "Hooks",
+        "Component Lifecycle",
+        "State Management",
+        "Context API"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Clau.com",
+      "isActive": true,
+      "description": "Collaborated in Mexico’s largest real estate platform with over 80,000 properties.",
+      "highlights": [
+        "Next.js",
+        "React",
+        "Typescript",
+        "Tailwind",
+        "Node.js",
+        "MySQL"
+      ],
+      "url": "https://clau.com/"
+    },
+    {
+      "name": "CpA",
+      "isActive": true,
+      "description": "Collaborated in a unique platform designed for real estate professionals in Mexico.",
+      "highlights": [
+        "Next.js",
+        "React",
+        "Typescript",
+        "Tailwind",
+        "Node.js",
+        "MySQL"
+      ],
+      "url": "https://asesores.clau.com/"
+    },
+    {
+      "name": "Ache",
+      "isActive": false,
+      "description": "Developed a conceptual furniture online store using React.",
+      "highlights": ["React", "Node.js", "MongoDB", "Firebase"],
+      "url": "https://ache-sable.vercel.app/"
+    },
+    {
+      "name": "Gaucha",
+      "isActive": false,
+      "description": "Developed a conceptual luxury jewelry brand website using HTML and CSS.",
+      "highlights": ["HTML", "CSS", "Bootstrap"],
+      "url": "https://mchouhy.github.io/gaucha/"
+    },
+    {
+      "name": "Pixel Converter",
+      "isActive": false,
+      "description": "Developed an absolute & relative CSS length units converter using JavaScript.",
+      "highlights": ["HTML", "CSS", "Javascript"],
+      "url": "https://mchouhy.github.io/pixelconverter/"
+    },
+    {
+      "name": "Palindrome Checker",
+      "isActive": false,
+      "description": "Developed Checks whether a word is a palindrome or not usign Javascript.",
+      "highlights": ["HTML", "CSS", "Javascript"],
+      "url": "https://mchouhy.github.io/palindromeChecker/"
+    }
+  ]
+}

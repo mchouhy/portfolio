@@ -2,9 +2,10 @@
 import Section from "./Section.astro";
 import Badge from "./Badge.astro";
 import SocialPills from "./SocialPills.astro";
+import { basics } from "../cv.json";
 ---
 
-<Section class="py-32 md:py-36 sm:min-h-screen">
+<Section class="py-32 md:py-36 sm:min-h-screen" id="contact">
   <div class="max-w-2xl">
     <div class="flex gap-5 mb-4">
       <img
@@ -25,7 +26,7 @@ import SocialPills from "./SocialPills.astro";
     <strong
       class="tracking-tight text-5xl sm:text-5xl font-bold flex flex-col-reverse gap-y-3 gap-x-4 mb-4 xs:flex-row md:flex-row lg:flex-row"
     >
-      Hey, I'm Mariano Chouhy
+      {basics.title}
     </strong>
     <h2 class="text-xl xs:text-xl sm:text-2xl text-pretty">
       <span class="font-bold">+14 years experienced Lawyer</span>

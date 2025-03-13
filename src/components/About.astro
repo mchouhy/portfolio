@@ -1,0 +1,81 @@
+---
+import Section from "./Section.astro";
+import User from "./User.astro";
+---
+
+<Section id="about" class="mb-24">
+  <h2
+    class="flex items-center tracking-tight text-3xl sm:text-5xl font-semibold mb-6 gap-x-3"
+  >
+    <User class="size-8" />
+    About
+  </h2>
+  <article class="flex flex-col gap-5">
+    <p class="text-xl text-pretty leading-8">
+      I started programming in 2024 after more than 14 years as a lawyer in the
+      public and private sectors, following my move from Argentina to Spain.
+      Technology has always fascinated me, and as I shifted my career, I
+      discovered a new passion. Currently, I divide my time between working as a
+      criminal lawyer at a law firm in Madrid and as a frontend developer at a
+      Mexican startup.
+    </p>
+    <p class="text-xl text-pretty leading-8">
+      Some of my achievements include
+      <span class="font-bold">
+        becoming the youngest Court Clerk in the economic criminal court in
+        Buenos Aires after being promoted seven times in eight years and
+        implementing a digital jurisprudence system that significantly reduced
+        errors in legal decision-making.
+      </span>
+    </p>
+    <p class="text-xl text-pretty leading-8">
+      As a growing web developer,
+      <span class="font-bold">
+        I secured my first experience in the field in less than a year
+      </span>
+      and I am eager to continue learning and evolving in this exciting world of
+      technology.
+    </p>
+    <p class="text-xl text-pretty leading-8">
+      Thank you for visiting my portfolio! 🚀
+    </p>
+    <a
+      href="#contact"
+      role="link"
+      class="inline-flex w-fit scroll-smooth items-center px-5 py-2 me-2 mb-2
+            text-sm text-gray-900 font-medium rounded-full
+            bg-white border border-gray-300
+            focus:ring-4 focus:outline-none focus:ring-gray-200
+            hover:bg-black hover:scale-110 hover:text-white
+            transition
+            dark:text-white
+            dark:border-gray-600 dark:bg-gray-800
+            dark:hover:border-gray-600 dark:hover:bg-gray-700
+            dark:focus:ring-gray-700"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-mail-forward
+                        size-5 me-2"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" clip-rule="evenodd"
+        ></path>
+        <path
+          d="M12 18h-7a2 2 0 0 1 -2 
+                        -2v-10a2 2 0 0 1 2 -2h14a2 
+                        2 0 0 1 2 2v7.5"
+        ></path>
+        <path d="M3 6l9 6l9 -6"></path>
+        <path d="M15 18h6"></path>
+        <path d="M18 15l3 3l-3 3"></path>
+      </svg>
+      Contact
+    </a>
+  </article>
+</Section>
