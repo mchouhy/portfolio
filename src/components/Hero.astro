@@ -5,7 +5,7 @@ import SocialPills from "./SocialPills.astro";
 import { basics } from "../cv.json";
 ---
 
-<Section class="py-12 md:py-36" id="contact">
+<Section class="py-12 md:py-36 md:min-h-screen" id="contact">
   <div class="max-w-3xl mx-auto">
     <div class="flex gap-5 mb-4">
       <img
@@ -39,6 +39,14 @@ import { basics } from "../cv.json";
       >
     </h2>
     <SocialPills />
+    <div class="flex justify-center mt-12 md:mt-28">
+      <video
+        class=""
+        src="/public/videos/scroll-animation.webm"
+        autoplay
+        loop
+        width="90"></video>
+    </div>
   </div>
 </Section>
 <style>
