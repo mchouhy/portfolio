@@ -12,6 +12,6 @@ export default {
       lg: "1024px",
       xl: "1280px",
     },
+    plugins: [],
   },
-  plugins: [],
 };

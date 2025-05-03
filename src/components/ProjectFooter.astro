@@ -1,0 +1,173 @@
+---
+import NextJs from "../icons/NextJs.astro";
+import NodeJs from "../icons/NodeJs.astro";
+import React from "../icons/React.astro";
+import Tailwind from "../icons/Tailwind.astro";
+import TypeScript from "../icons/TypeScript.astro";
+
+interface Props {
+  class?: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  tags?: string[];
+  link?: string;
+}
+
+const {
+  class: className,
+  title,
+  subtitle,
+  description,
+  tags,
+  link,
+} = Astro.props as Props;
+---
+
+<div class="flex flex-col gap-y-1">
+  <h4 class="font-semibold text-2xl">{title}</h4>
+  <p class="text-xl">{subtitle}</p>
+  <div class="flex gap-2 text-pretty flex-wrap">
+    <span
+      class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+    >
+      <React />
+      React
+    </span>
+    <span
+      class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+    >
+      <NextJs />
+      Next.js
+    </span>
+    <span
+      class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+    >
+      <TypeScript />
+      TypeScript
+    </span>
+    <span
+      class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+    >
+      <Tailwind />
+      Tailwind
+    </span>
+    <span
+      class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+    >
+      <NodeJs />
+      Node.js
+    </span>
+  </div>
+  <div class="flex flex-col gap-y-2">
+    <h3 class="font-medium text-lg"></h3>
+    <p class="font-normal">
+      <div class="flex flex-col gap-y-1">
+        <h4 class="font-semibold text-2xl">Clau</h4>
+        <p class="text-xl">México's largest real estate platform</p>
+        <div class="flex gap-2 text-pretty flex-wrap">
+          <span
+            class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+          >
+            <React />
+            React
+          </span>
+          <span
+            class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+          >
+            <NextJs />
+            Next.js
+          </span>
+          <span
+            class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+          >
+            <TypeScript />
+            TypeScript
+          </span>
+          <span
+            class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+          >
+            <Tailwind />
+            Tailwind
+          </span>
+          <span
+            class="flex w-fit gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"
+          >
+            <NodeJs />
+            Node.js
+          </span>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <h3 class="font-medium text-lg"></h3>
+          <p class="font-normal">
+            {description}
+          </p>
+        </div>
+        <a
+          href="https://www.clau.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center mt-4 w-fit px-4 py-2 dark:hover:text-white
+                                        
+                                          text-sm text-gray-900 font-medium rounded-full
+                                          bg-white border border-gray-300
+                                          focus:ring-4 focus:outline-none focus:ring-gray-200
+                                          hover:ring-4 hover:ring-gray-100
+                                          transition
+                                          dark:text-white
+                                          dark:border-gray-600 dark:bg-gray-800
+                                          dark:hover:border-gray-600 dark:hover:bg-gray-700
+                                          dark:focus:ring-gray-700"
+        >
+          Web{" "}
+          <svg
+            class="w-3 h-3 ms-2 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+          </svg>
+        </a>
+      </div>
+    </p>
+  </div>
+  <a
+    href="https://www.clau.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center mt-4 w-fit px-4 py-2 dark:hover:text-white
+                                        
+                                          text-sm text-gray-900 font-medium rounded-full
+                                          bg-white border border-gray-300
+                                          focus:ring-4 focus:outline-none focus:ring-gray-200
+                                          hover:ring-4 hover:ring-gray-100
+                                          transition
+                                          dark:text-white
+                                          dark:border-gray-600 dark:bg-gray-800
+                                          dark:hover:border-gray-600 dark:hover:bg-gray-700
+                                          dark:focus:ring-gray-700"
+  >
+    Web{" "}
+    <svg
+      class="w-3 h-3 ms-2 rtl:rotate-180"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 14 10"
+    >
+      <path
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+    </svg>
+  </a>
+</div>
