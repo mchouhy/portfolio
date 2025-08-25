@@ -28,11 +28,16 @@ import { basics } from "../cv.json";
     >
       {basics.title}
     </strong>
-    <h2 class="text-xl sm:text-2xl">
-      <span class="font-bold">+14 years experienced Lawyer &</span>
-      <span class="presentation-span font-bold">Frontend Developer.</span>
-      <br />
+    <h2 class="text-xl sm:text-2xl mb-1">
+      <span class="font-bold">Lawyer &</span>
+      <span class="font-bold">Tech Professional</span>
     </h2>
+    <p class="font-normal text-xl sm:text-2xl">
+      Combining Legal Expertise with <span class="presentation-span"
+        >Technological Innovation</span
+      >
+    </p>
+
     <SocialPills />
     <div class="flex justify-center mt-12 md:mt-28">
       <video
@@ -57,5 +62,10 @@ import { basics } from "../cv.json";
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .presentation-span-black {
+    color: black;
+    -webkit-text-fill-color: black;
   }
 </style>
